@@ -1,0 +1,177 @@
+.login-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('../assets/images/bg2.jpg') no-repeat center center;
+    background-size: cover; /* Ensures the image covers the whole screen */
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%; /* Ensure the container takes full width */
+}
+
+.login-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.error-text {
+    color: red;
+    font-size: 14px;
+}
+
+/* src/components/LoginPage.css */
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+}
+
+.login-container {
+    max-width: 500px;
+    width: 100%;
+}
+
+.login-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-logo {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 100px;
+}
+
+.error-text {
+    color: red;
+    text-align: center;
+}
+
+.footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+body[dir="rtl"] .login-box {
+    font-family: 'Noto Sans Arabic', sans-serif;
+    direction: rtl;
+    text-align: right;
+}
+
+/* General Styles */
+.login-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('../assets/images/bg2.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.login-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.error-text {
+    color: red;
+    font-size: 14px;
+}
+
+/* Arabic (RTL) styles */
+body[dir="rtl"] .login-box {
+    font-family: 'Noto Sans Arabic', sans-serif;
+    direction: rtl;
+    text-align: right;
+}
+
+body[dir="rtl"] .login-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+body[dir="rtl"] .login-box .form-group {
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+body[dir="rtl"] .login-box .form-group label {
+    margin-left: 10px;
+    margin-right: 0;
+    white-space: nowrap;
+}
+
+body[dir="rtl"] .login-box .form-group .form-control {
+    flex: 1;
+}
+
+/* General Form Alignment */
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.form-group label {
+    margin-right: 10px;
+    flex: 0 0 30%;
+    text-align: left;
+}
+
+.form-group .form-control {
+    flex: 1;
+}
+
+/* Footer Styles */
+.footer {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+}
+
+/* RTL Footer Styles */
+body[dir="rtl"] .footer {
+    text-align: center;
+    font-family: 'Noto Sans Arabic', sans-serif;
+}

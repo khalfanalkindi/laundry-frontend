@@ -1,0 +1,133 @@
+.sidebar {
+    background-color: #00BCD4;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 5rem;
+    height: calc(100% - 40px);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.sidebar.rtl {
+    left: auto;
+    right: 20px;
+}
+
+.main-content {
+    margin-left: 70px;
+    padding: 10px;
+}
+
+.main-content.rtl {
+    margin-left: 0;
+    margin-right: 70px;
+}
+
+.logo-icon {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.logo-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sidebar-icon {
+    color: rgb(226, 226, 239);
+    font-size: 24px;
+    margin: 12px 0;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.sidebar-icon:hover {
+    transform: scale(1.1);
+}
+
+.sidebar-icon.active {
+    background-color: #4ED0E1;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-icon:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    white-space: nowrap;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    z-index: 1000;
+    font-size: 12px;
+    pointer-events: none;
+}
+
+.sidebar.ltr .sidebar-icon:hover::after {
+    left: 80px;
+}
+
+.sidebar.rtl .sidebar-icon:hover::after {
+    right: 80px;
+    left: auto;
+}
+
+.sidebar-myicon {
+    width: 50px;
+    height: 50px;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.sidebar-myicon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sidebar-myicon:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    white-space: nowrap;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    z-index: 1000;
+    font-size: 12px;
+    pointer-events: none;
+}
+
+.sidebar.ltr .sidebar-myicon:hover::after {
+    left: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.sidebar.rtl .sidebar-myicon:hover::after {
+    right: 60px;
+    left: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}

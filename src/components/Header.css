@@ -1,0 +1,43 @@
+.header-container {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-top {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.header-top img {
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.header-navbar {
+    background-color: #343a40;
+}
+
+.header-navbar .nav-link,
+.header-navbar .navbar-brand {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.header-navbar .nav-link:hover,
+.header-navbar .navbar-brand:hover {
+    color: #dddddd;
+}
+
+#user-dropdown {
+    font-weight: 600;
+    color: #333333;
+}
+
+#user-dropdown .dropdown-toggle::after {
+    display: none;
+}
+
+#user-dropdown .dropdown-menu {
+    right: 0;
+    left: auto;
+}
