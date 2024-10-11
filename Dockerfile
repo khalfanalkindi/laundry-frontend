@@ -2,7 +2,7 @@
 FROM node:18
 
 # Set memory limit
-ENV NODE_OPTIONS=--max_old_space_size=4096
+ENV NODE_OPTIONS=--max_old_space_size=6144
 
 
 # Set the working directory in the container
